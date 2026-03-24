@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Arav Juneja</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --cream: #FFFFD6;
+      --ink: #0B2027;
+      --blue: #92AFD7;
+      --orange: #FAA381;
+      --green: #45B45D;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "EB Garamond", "Times New Roman", serif;
+    }
+
+    body {
+      background: var(--cream);
+      color: var(--ink);
+    }
+
+    /* ===== HERO ===== */
+    .hero {
+      padding: 72px 80px 64px;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 64px;
+    }
+
+    .hero-header {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      margin-bottom: 24px;
+    }
+
+    .pfp {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 6px solid var(--blue);
+    }
+
+    h1 {
+      font-size: 3.2rem;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .subtitle {
+      font-size: 1.1rem;
+      line-height: 1.45;
+      opacity: 0.85;
+    }
+
+    .about-text {
+      max-width: 720px;
+      font-size: 1.05rem;
+      line-height: 1.65;
+      margin-top: 20px;
+      opacity: 0.9;
+    }
+
+    .contact-line {
+      margin-top: 16px;
+      font-size: 0.95rem;
+      opacity: 0.75;
+      line-height: 1.7;
+    }
+
+    .contact-line a {
+      color: var(--ink);
+    }
+
+    .contact-line a:hover {
+      color: var(--green);
+    }
+
+    /* ===== HERO RIGHT ===== */
+    .hero-right h2 {
+      font-size: 1.2rem;
+      margin-bottom: 16px;
+      border-bottom: 2px solid var(--blue);
+      display: inline-block;
+      padding-bottom: 4px;
+    }
+
+    .hero-right ul {
+      list-style: none;
+    }
+
+    .hero-right li {
+      margin-bottom: 18px;
+    }
+
+    .role {
+      font-weight: 600;
+    }
+
+    .meta {
+      font-size: 0.95rem;
+      opacity: 0.7;
+    }
+
+    /* ===== CONTENT ===== */
+    .content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      border-top: 2px solid var(--blue);
+    }
+
+    .left,
+    .right {
+      padding: 64px 80px;
+    }
+
+    .right {
+      border-left: 2px solid var(--blue);
+    }
+
+    section {
+      margin-bottom: 56px;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      margin-bottom: 20px;
+      border-left: 4px solid var(--orange);
+      padding-left: 10px;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    li {
+      margin-bottom: 26px;
+      line-height: 1.6;
+    }
+
+    .desc {
+      font-size: 0.97rem;
+      opacity: 0.85;
+      margin-top: 5px;
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--ink);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    a:hover {
+      color: var(--green);
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px 32px;
+    }
+
+    .skill-group strong {
+      display: block;
+      font-size: 1rem;
+      margin-bottom: 4px;
+      opacity: 0.7;
+    }
+
+    .skill-group span {
+      font-size: 0.97rem;
+      line-height: 1.6;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.9rem;
+      opacity: 0.6;
+    }
+
+    /* ===== MOBILE ===== */
+    @media (max-width: 900px) {
+      .hero {
+        grid-template-columns: 1fr;
+        padding: 40px 28px;
+        gap: 40px;
+      }
+
+      .content {
+        grid-template-columns: 1fr;
+      }
+
+      .left,
+      .right {
+        padding: 40px 28px;
+      }
+
+      .right {
+        border-left: none;
+        border-top: 2px solid var(--blue);
+      }
+
+      .skills-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="hero">
+  <div>
+    <div class="hero-header">
+      <img src="assets/pfp.jpg" alt="Arav Juneja" class="pfp">
+      <div>
+        <h1>Arav Juneja</h1>
+        <p class="subtitle">
+          Computer Engineering · University of Maryland, College Park<br>
+          Full-Stack Development · Quantum ML Research · Intelligent Systems
+        </p>
+      </div>
+    </div>
+
+    <p class="about-text">
+      Computer Engineering student at UMD with a curriculum grounded in core electrical engineering
+      courses including circuits, electronics, digital logic, signal analysis, and computer organization,
+      alongside software development and computer science. Experienced in full-stack development,
+      quantum machine learning research, and AI-driven systems. Seeking opportunities across hardware
+      and software engineering, with a long-term focus on robotics and intelligent systems.
+    </p>
+
+    <p class="contact-line">
+      <a href="mailto:aravjunejawork@gmail.com">aravjunejawork@gmail.com</a> &nbsp;·&nbsp;
+      (630) 923-0083 &nbsp;·&nbsp;
+      <a href="https://www.linkedin.com/in/arav-juneja-10a907257" target="_blank">LinkedIn</a>
+    </p>
+  </div>
+
+  <div class="hero-right">
+    <h2>Education</h2>
+    <ul>
+      <li>
+        <span class="role">University of Maryland, College Park</span><br>
+        <span class="meta">B.A.Sc. Computer Engineering — 2024–2028</span>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="content">
+  <div class="left">
+
+    <section>
+      <h2>Experience</h2>
+      <ul>
+        <li>
+          <span class="role">Frontend Developer</span> — Lockbyte<br>
+          <span class="meta">June 2025 – September 2025</span>
+          <p class="desc">Developed and enhanced front-end features using Vue.js, contributing to responsive and scalable web applications. Partnered with cross-functional teams to translate design concepts into functional, high-quality user interfaces.</p>
+        </li>
+        <li>
+          <span class="role">Undergraduate Research Assistant</span> — University of Maryland<br>
+          <span class="meta">January 2025 – December 2025</span>
+          <p class="desc">Presented research on Quantum Classical PINNs with trainable angle embeddings, showing &gt;60% improved accuracy when solving PDEs and enabling practical deployment on qubit-based quantum hardware (IonQ/IBM). <a href="https://github.com/AravJuneja/UMD-QML-Research" target="_blank">GitHub</a></p>
+        </li>
+        <li>
+          <span class="role">Tutor</span> — Varsity Tutors<br>
+          <span class="meta">December 2024 – May 2025</span>
+          <p class="desc">Tutored high school students remotely in AP Physics, AP Calculus, and AP Computer Science A, adapting teaching methods to individual learning styles and reinforcing key concepts through targeted practice.</p>
+        </li>
+        <li>
+          <span class="role">Computer Science Teacher</span> — Code Ninjas<br>
+          <span class="meta">March 2024 – August 2024</span>
+          <p class="desc">Delivered hands-on instruction in computer science and engineering concepts to students ages 7–14, helping develop critical thinking, creativity, and early coding skills.</p>
+        </li>
+        <li>
+          <span class="role">Cybersecurity Intern</span> — Work Based Learning Alliance<br>
+          <span class="meta">February 2024 – May 2024</span>
+          <p class="desc">Conducted analysis of web-based security threats, including identifying malicious backdoors and vulnerabilities. Assisted in strengthening application security by evaluating risks and supporting mitigation efforts.</p>
+        </li>
+        <li>
+          <span class="role">Co-Founder / Software Engineer</span> — Text-Serve<br>
+          <span class="meta">August 2023 – August 2024</span>
+          <p class="desc">Awarded Business INCubator Student of the Year (1 of ~300 students, District 203). Co-founded and developed an AI-driven platform enabling restaurants to accept and process orders via SMS. Built and deployed an LLM-based system to interpret customer messages and integrate orders directly with POS systems. Led end-to-end product development, including market research and customer acquisition.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <strong>Languages</strong>
+          <span>Python, Java, Assembly, C, JavaScript, Verilog, Bash</span>
+        </div>
+        <div class="skill-group">
+          <strong>Frameworks</strong>
+          <span>Vue.js, DSPy</span>
+        </div>
+        <div class="skill-group">
+          <strong>Tools</strong>
+          <span>Git/GitHub, Unix, Excel, Twilio, MongoDB, SQL</span>
+        </div>
+        <div class="skill-group">
+          <strong>Concepts</strong>
+          <span>Machine Learning, Quantum Computing, REST APIs, Cybersecurity</span>
+        </div>
+      </div>
+    </section>
+
+    <footer>© 2026 Arav Juneja</footer>
+  </div>
+
+  <div class="right">
+    <section>
+      <h2>Projects</h2>
+      <ul>
+        <li>
+          <span class="role">16-Bit RISC Processor</span><br>
+          <a href="https://github.com/AravJuneja/16-Bit-RISC-Processor" target="_blank">GitHub</a>
+          <p class="desc">Designed a single-cycle 16-bit RISC processor in Verilog with a 15-instruction ISA, Harvard architecture, and 8 general-purpose registers. Built a two-pass Python assembler and verified with sample programs including Fibonacci generation and bubble sort.</p>
+        </li>
+        <li>
+          <span class="role">Vue.js Task Manager</span><br>
+          <a href="https://github.com/AravJuneja/Vue.js-Task-Manager" target="_blank">GitHub</a>
+          <p class="desc">Built a full-stack task management app using Vue.js with Google OAuth for user authentication and persistent storage. Features include task creation, editing, completion tracking, and per-user data syncing.</p>
+        </li>
+        <li>
+          <span class="role">Custom Linux Desktop Environment</span><br>
+          <a href="https://github.com/AravJuneja/Custom-LinuxDE" target="_blank">GitHub</a>
+          <p class="desc">Configured a tiling desktop environment using i3wm, Polybar, and Rofi on Ubuntu. Wrote custom Bash scripts for workspace management, screenshot capture, reading mode toggling, and application launching.</p>
+        </li>
+      </ul>
+    </section>
+  </div>
+</div>
+
+</body>
+</html>
