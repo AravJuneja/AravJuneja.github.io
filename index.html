@@ -10,7 +10,7 @@
       max-width: 720px;
       margin: 60px auto;
       padding: 0 24px;
-      font-family: sans-serif;
+      font-family: serif;
       line-height: 1.6;
       color: #111;
     }
@@ -24,9 +24,18 @@
 <body>
   <div id="content"></div>
   <script>
-    fetch('content.md')
-      .then(r => r.text())
-      .then(md => { document.getElementById('content').innerHTML = marked.parse(md); });
+    const md = `# Arav Juneja
+
+
+
+## My Work
+[Relatavistic Ray Tracer](https://github.com/AravJuneja/relativistic_ray_tracer)
+
+[Teaching Physics to ML models](https://github.com/AravJuneja/UMD-QML-Research/blob/main/document.pdf)
+
+[Watership OS](https://github.com/AravJuneja/watership_os)
+`;
+    document.getElementById('content').innerHTML = marked.parse(md) + '<img src="https://ghchart.rshah.org/AravJuneja" alt="GitHub activity" style="width:100%;margin-top:1em;" />';
   </script>
 </body>
 </html>
