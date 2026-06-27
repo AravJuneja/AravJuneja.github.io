@@ -1,5 +1,4 @@
 import re
-import subprocess
 
 with open("content.md") as f:
     content = f.read().strip()
@@ -14,9 +13,3 @@ with open("index.html", "w") as f:
     f.write(updated)
 
 print("index.html updated.")
-
-subprocess.run(["git", "add", "."], check=True)
-subprocess.run(["git", "commit", "-m", "markdown updated"], check=True)
-subprocess.run(["git", "push"], check=True)
-
-print("Pushed to remote.")
